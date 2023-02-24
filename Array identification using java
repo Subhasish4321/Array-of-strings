@@ -1,0 +1,31 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+import java.util.Scanner;
+public class Solution {
+
+    public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        String arr[]= {"Raj", "77", "101", "99", "Jio"};
+       
+        int st=0;
+        int nu=0;
+        for(int i=0;i<n;i++)
+        {
+            char ch=arr[i].charAt(0);
+            int c=(int)ch;
+            if((c>=65&&c<=90)||(c>=97&& c<=122))
+                st+=1;
+            else 
+                nu+=1;
+        }
+        System.out.println(nu);
+        System.out.println(st);
+    }
+}
+
+
+
